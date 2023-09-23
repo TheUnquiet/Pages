@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--grey);
+    overflow-x: hidden;
+    overflow-y: overlay;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+iframe {
+    border-radius: 24px;
+    box-shadow: var(--darker-shadow-elevation-medium);
+    width: var(--video-width);
+}
+
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--secondary-grey);
+    position: -webkit-sticky;
+    position: sticky;
+    top: -1px;
+    z-index: 1;
+    width: 100vw;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: var(--white);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+li a:hover {
+    background-color: #010101;
+}
+
+.header {
+    min-height: 70vh;
+    width: 100vw;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    color: var(--white);
+    background-color: #010101;
+}
+
+.header h1 {
+    font-size: 120px;
+}
+
+.header p {
+    font-weight: 450;
+    font-size: 40px;
+    opacity: .8;
+}
+
+.content {
+    display: grid;
+    place-content: center;
+    
+    min-height: 100vh;
+}
+
+.video-container {
+    min-height: max-content;
+    color: var(--white);
+    text-align: left;
+    background-color: var(--secondary-grey);
+    box-shadow: var(--darker-shadow-elevation-medium);
+
+    margin: 40px 0 25px 0;
+    padding: 35px 75px;
+    border-radius: 24px;
+}
+
+.video-container > h2 {
+    font-size: 40px;    
+}
+
+.video-container > p {
+    font-size: larger;
+    width: var(--video-width);
+    padding-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    border-radius: 15px;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 8px 12px;
+    margin: 8px 0;
+    text-decoration: none;
+    box-shadow: var(--darker-shadow-elevation-low);
+    font-weight: bold;
+    font-size: larger;
+
+    transition: all;
+    transition-duration: .15s;
+    transform: translateY(2px);
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--darker-shadow-elevation-medium);
+}
+

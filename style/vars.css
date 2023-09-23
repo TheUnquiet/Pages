@@ -1,0 +1,68 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+:root {
+  --blue: #0ff;
+  --grey: rgb(79, 84, 87);
+  --secondary-grey: rgb(24, 26, 27);
+  --white: #ffffffb7;
+  --black: #010101;
+  --video-width: 950px;
+  --shadow-color: 203deg 6% 17%;
+  --shadow-elevation-low:
+    0px 0.5px 0.7px hsl(var(--shadow-color) / 0.27),
+    0px 1.9px 2.5px -1.3px hsl(var(--shadow-color) / 0.52);
+  --shadow-elevation-medium:
+    0px 0.5px 0.7px hsl(var(--shadow-color) / 0.25),
+    0px 2.9px 3.8px -0.6px hsl(var(--shadow-color) / 0.4),
+    -0.1px 9.6px 12.5px -1.3px hsl(var(--shadow-color) / 0.56);
+  --shadow-elevation-high:
+    0px 0.5px 0.7px hsl(var(--shadow-color) / 0.23),
+    -0.1px 5.1px 6.7px -0.3px hsl(var(--shadow-color) / 0.3),
+    -0.1px 9.8px 12.8px -0.5px hsl(var(--shadow-color) / 0.38),
+    -0.3px 17px 22.2px -0.8px hsl(var(--shadow-color) / 0.45),
+    -0.4px 29px 37.8px -1px hsl(var(--shadow-color) / 0.52),
+    -0.7px 47.9px 62.5px -1.3px hsl(var(--shadow-color) / 0.59);
+
+  --darker-shadow-color: 200deg 10% 2%;
+  --darker-shadow-elevation-low:
+    0px 0.3px 0.3px hsl(var(--darker-shadow-color) / 0.34),
+    0px 0.6px 0.7px -1.2px hsl(var(--darker-shadow-color) / 0.34),
+    0px 1.3px 1.5px -2.5px hsl(var(--darker-shadow-color) / 0.34);
+  --darker-shadow-elevation-medium:
+    0px 0.3px 0.3px hsl(var(--darker-shadow-color) / 0.36),
+    0px 1.1px 1.2px -0.8px hsl(var(--darker-shadow-color) / 0.36),
+    0px 2.7px 3px -1.7px hsl(var(--darker-shadow-color) / 0.36),
+    0px 6.7px 7.5px -2.5px hsl(var(--darker-shadow-color) / 0.36);
+  --darker-shadow-elevation-high:
+    0px 0.3px 0.3px hsl(var(--darker-shadow-color) / 0.34),
+    0px 1.9px 2.1px -0.4px hsl(var(--darker-shadow-color) / 0.34),
+    0px 3.6px 4.1px -0.7px hsl(var(--darker-shadow-color) / 0.34),
+    0px 6px 6.8px -1.1px hsl(var(--darker-shadow-color) / 0.34),
+    -0.1px 9.5px 10.7px -1.4px hsl(var(--darker-shadow-color) / 0.34),
+    -0.1px 14.9px 16.8px -1.8px hsl(var(--darker-shadow-color) / 0.34),
+    -0.1px 22.6px 25.4px -2.1px hsl(var(--darker-shadow-color) / 0.34),
+    -0.2px 33.3px 37.5px -2.5px hsl(var(--darker-shadow-color) / 0.34);
+
+
+  --webkit-box-shadow: -17px -15px 3px 1.5px rgba(130,53,255,1);
+  --moz-box-shadow: -17px -15px 3px 1.5px rgba(130,53,255,1);
+  --box-shadow: -17px -15px 3px 1.5px rgba(130,53,255,1);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, .2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-grey);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #000;
+}

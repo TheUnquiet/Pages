@@ -1,0 +1,67 @@
+* {
+    color: var(--white);
+    padding: 0;
+    margin: 0;
+}
+
+.bg-black {
+    background-color: #010101;
+    min-height: 100vh;
+    display: grid;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    margin-left: 100px;
+}
+
+.text h1 {
+    font-size: 90px;
+    line-height: 90px;
+}
+
+.text p {
+    font-size: 30px;
+    opacity: .8;
+}
+
+.orb {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 
+        inset 0 0 50px #fff,
+        inset 20px 0 60px violet,
+        inset -20px 0 60px var(--blue),
+        inset 20px 0 300px violet,
+        inset -20px 0 300px var(--blue),
+        0 0 100px #fff,
+        -10px 0 60px violet,
+        10px 0 60px var(--blue)
+    ;
+
+    place-items: center;
+}
+
+/* I got lazy with the button */
+.restart {
+    border: rgb(114, 215, 255) solid 2px;
+    background: transparent;
+    padding: 10px 28px;
+    font-size: 20px;
+    color: rgb(114, 215, 255);
+    cursor: pointer;
+    
+    margin: 6px 5px 0 0;
+}
+
+.restart i {
+    color: rgb(114, 215, 255);
+}
+

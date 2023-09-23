@@ -1,0 +1,58 @@
+.content {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+#cursor {
+    color: rgb(130, 52, 255);
+    animation: blink 1s infinite;
+}
+
+#typewriter {
+    color: rgb(130, 52, 255);
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 90px;
+}
+
+.btn {
+    display: block;
+    position: absolute;
+    width: 200px;
+    z-index: 100;
+
+    top: 10px;
+    left: 10px;
+
+    border: 0;
+
+    box-shadow: 
+    3px 3px 0px 0px var(--grey),
+    4px 4px 0px 0px var(--grey),
+    5px 5px 0px 0px var(--grey),
+    6px 6px 0px 0px var(--grey),
+    7px 7px 0px 0px var(--grey)
+    ;
+}
+
+.btn:hover {
+    box-shadow: 
+    3px 3px 0px 0px var(--grey),
+    4px 4px 0px 0px var(--grey),
+    5px 5px 0px 0px var(--grey),
+    6px 6px 0px 0px var(--grey),
+    7px 7px 0px 0px var(--grey)
+    ;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}

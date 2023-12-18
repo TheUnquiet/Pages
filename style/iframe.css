@@ -21,6 +21,10 @@ h1 {
     text-align: center;
 }
 
+div {
+    text-align: center;
+}
+
 iframe {
     border-radius: 24px;
     box-shadow: var(--darker-shadow-elevation-medium);
@@ -111,10 +115,12 @@ li a:hover {
     border-radius: 15px;
     background-color: var(--black);
     color: var(--white);
+    border: none;
     padding: 8px 12px;
     margin: 8px 0;
     text-decoration: none;
-    box-shadow: var(--darker-shadow-elevation-low);
+    text-align: center;
+    box-shadow: var(--darker-shadow-elevation-medium);
     font-weight: bold;
     font-size: larger;
 
@@ -129,3 +135,7 @@ li a:hover {
     box-shadow: var(--darker-shadow-elevation-medium);
 }
 
+.btn i {
+    margin:0 5px;
+    font-size: 18px;
+}

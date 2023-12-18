@@ -1,15 +1,15 @@
-.content {
+body {
     background-color: var(--black);
     color: var(--white);
 }
 
 #cursor {
-    color: rgb(130, 52, 255);
+    color: var(--purple);
     animation: blink 1s infinite;
 }
 
 #typewriter {
-    color: rgb(130, 52, 255);
+    color: var(--purple);
     font-weight: bold;
 }
 
@@ -21,7 +21,7 @@ h1 {
     display: block;
     position: absolute;
     width: 200px;
-    z-index: 100;
+    z-index: 10;
 
     top: 10px;
     left: 10px;
@@ -33,8 +33,7 @@ h1 {
     4px 4px 0px 0px var(--grey),
     5px 5px 0px 0px var(--grey),
     6px 6px 0px 0px var(--grey),
-    7px 7px 0px 0px var(--grey)
-    ;
+    7px 7px 0px 0px var(--grey);
 }
 
 .btn:hover {
@@ -43,8 +42,7 @@ h1 {
     4px 4px 0px 0px var(--grey),
     5px 5px 0px 0px var(--grey),
     6px 6px 0px 0px var(--grey),
-    7px 7px 0px 0px var(--grey)
-    ;
+    7px 7px 0px 0px var(--grey);
 }
 
 @keyframes blink {

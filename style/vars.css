@@ -1,7 +1,8 @@
 @import url('https://fonts.cdnfonts.com/css/poppins');
 
 :root {
-  --blue: #0ff;
+  --blue: rgb(0, 255, 255);
+  --purple: rgb(130, 52, 255);
   --grey: rgb(79, 84, 87);
   --secondary-grey: rgb(24, 26, 27);
   --white: #ffffffb7;

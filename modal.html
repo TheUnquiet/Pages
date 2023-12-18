@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="style/iframe.css">
+    <link rel="stylesheet" href="style/vars.css">
+    <link rel="stylesheet" href="style/modal.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/spidey-favicon.jpg" type="image/x-icon">
+    <title>Modal</title>
+</head>
+<body>
+    <div class="content">
+        <div>
+            <h1><"modal"></h1>
+            <p>
+                Very eazyy I promisee <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque officia dolor 
+                eligendi itaque
+                laboriosam nam, <br>
+                vel unde iure, 
+                consequatur est earum quae, aliquid sapiente totam 
+                harum impedit quisquam molestias 
+                exercitationem.
+            </p>
+            <br>            
+            <p style="color: var(--purple);">
+                Press "B" to go back <i class="fa fa-home" aria-hidden="true"></i>
+            </p>
+            <br>
+            <button class="btn open">Click for a Lina</button>
+        </div>
+    </div>
+
+    <dialog class="modal" id="modal">
+        <div class="card">
+            <img src="img/linaa.jpg" class="card-img-top" alt="lina">
+            <div class="card-content">
+                <h2 class="card-title">Your bestie!</h2>
+                <p class="card-text">
+                    Lina! <br>
+                    Pressing "Esc" will allow you
+                    to close <br>
+                    this window.
+                </p>
+                <button class="btn close">Close</button>
+            </div>
+        </div>
+    </dialog>
+
+    <script src="js/model.js"></script>
+</body>
+</html>

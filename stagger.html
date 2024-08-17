@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+
+    <link href="https://fonts.cdnfonts.com/css/proxima-nova-2" rel="stylesheet">
+    <title>Anime.js</title>
+
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
+    </style>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+            font-size: 40px;
+            font-weight: 750;
+            font-family: 'Proxima Nova', sans-serif;
+        }
+
+        body {
+            background-color: rgba(0, 0, 0, 0.993);
+            height: 100vh;
+        }
+
+        main {
+            width: 100%;
+            height: 100vh;
+
+            display: grid;
+            place-items: center;
+        }
+
+        #grid {
+            display: grid;
+            place-items: center;
+            gap: 10px;
+        }
+
+        .element {
+            background-color: rgb(26, 201, 105);
+            border-radius: 5px;
+            box-shadow: 0 5px 0px rgba(255, 255,255, .07);
+
+            color: aliceblue;
+            height: 1.6rem;
+            width: 1.6rem;
+
+            display: grid;
+            place-items: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- There isn't a lot so everything is in oen file :) -->
+    <main>
+        <div id="grid">
+            <div class="element">C</div>
+            <div class="element">r</div>
+            <div class="element">y</div>
+            <div class="element">p</div>
+            <div class="element">t</div>
+            <div class="element">o</div>
+        </div>
+    </main>
+
+    <script>
+        // get the grid itself
+        const grid = document.getElementById('grid');
+
+        // when the mouse hovers over the grid -> the animation begins
+        grid.addEventListener('mouseover', (e) => {
+            anime({
+                targets: '.element', 
+                translateX: [
+                    { 
+                        value: 270, 
+                        delay: anime.stagger(100, {start: 300}), 
+                        easing: "spring",
+                    }
+                ],
+                direction: 'alternate', // go back and fourth
+                // loop: true,
+            });
+        }, {once: true}); // trigger only
+    </script>
+</body>
+</html>
